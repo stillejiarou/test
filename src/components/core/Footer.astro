@@ -1,0 +1,14 @@
+---
+import { AUTHOR, SITE_NAME, SITE_URL, SOCIAL } from "../../config";
+const year = new Date().getFullYear();
+---
+
+<footer class="h-card">
+  <p>
+    <time class="dt-updated">© {year}</time>
+    <span class="p-name">{AUTHOR}</span>,
+    <a class="u-url p-org" href={SITE_URL}>{SITE_NAME}</a> |
+    <a class="u-url" rel="me" href={SOCIAL.github}>GitHub</a> &bull;
+    <a class="u-url" rel="me" href={SOCIAL.neocities}>Neocities</a>
+  </p>
+</footer>

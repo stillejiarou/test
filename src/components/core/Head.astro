@@ -1,0 +1,44 @@
+---
+import {
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  SITE_URL,
+  DEFAULT_OG_IMAGE,
+  THEME_COLOR_LIGHT,
+} from "../../config";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+
+const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+const metaDescription = description ?? SITE_DESCRIPTION;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="theme-color" content={THEME_COLOR_LIGHT} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{pageTitle}</title>
+  <meta property="og:title" content={pageTitle} />
+  <meta name="twitter:title" content={pageTitle} />
+
+  <meta name="description" content={metaDescription} />
+  <meta property="og:description" content={metaDescription} />
+  <meta name="twitter:description" content={metaDescription} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={SITE_URL + Astro.url.pathname} />
+  <link rel="canonical" href={SITE_URL + Astro.url.pathname} />
+
+  <meta property="og:image" content={DEFAULT_OG_IMAGE} />
+  <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+
+  <link rel="icon" href="/favicon.ico" />
+</head>
