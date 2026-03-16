@@ -1,43 +1,35 @@
-# Astro Starter Kit: Minimal
+# -m "conventions"
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## type
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[ + ] core functionallity / visuals
 
-## 🚀 Project Structure
+[ ✓ ] fixed issue
 
-Inside of your Astro project, you'll see the following folders and files:
+[ = ] changes without editing behaviour / refractor
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+[ - ] removing something
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+[ ! ] backup / save before major changes
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+[ ? ] testing
 
-Any static assets, like images, can be placed in the `public/` directory.
+[ ~ ] don't remember / don't know
+ 
+## scope
 
-## 🧞 Commands
+<strong>layout</strong> - page structure
 
-All commands are run from the root of the project, from a terminal:
+<strong>theme</strong> - colors / font / spacing /
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+<strong>post</strong> - writing / removing / editing a post
 
-## 👀 Want to learn more?
+<strong>page </strong>- static page
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<strong>media</strong> - icons / images /
+
+<strong>windows</strong> - enviromental / settings / windows BS
+
+<strong>astro</strong> - astro configs / build related
+
+<strong>doc</strong> - documentation / readme
