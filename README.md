@@ -1,6 +1,10 @@
-# -m "conventions"
+# Playground of testing
 
-## type
+---
+
+## -m "conventions"
+
+### type
 
 [ + ] core functionallity / visuals
 
@@ -16,7 +20,7 @@
 
 [ ~ ] don't remember / don't know
  
-## scope
+### scope
 
 <strong>layout</strong> - page structure
 
