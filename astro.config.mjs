@@ -5,6 +5,6 @@ import preact from '@astrojs/preact';
 export default defineConfig({
   integrations: [preact()],
   experimental: {
-    rustCompiler: false
+    rustCompiler: true
   }
 });
