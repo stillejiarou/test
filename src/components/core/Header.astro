@@ -1,5 +1,8 @@
 ---
 import { SITE_NAME } from "../../config";
+import Breadcrumbs from "../../components/react/Breadcrumbs.jsx";
+
+const pathname = Astro.url.pathname;
 ---
 
 <header>
@@ -8,5 +11,7 @@ import { SITE_NAME } from "../../config";
     <a href="/about">About</a>
     <a href="/articles">Articles</a>
     <a href="/categories">Categories</a>
+
+    <Breadcrumbs pathname={pathname} client:load />
   </nav>
 </header>
